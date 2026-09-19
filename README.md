@@ -902,6 +902,7 @@ This project provides practical experience with:
 # 👨‍💻 Author
 
 **Preetham B**
+
 AI & ML Engineering Student | Backend Developer
 
 Focused on Java, Spring Boot, distributed systems, and backend engineering.
