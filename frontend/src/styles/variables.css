@@ -1,0 +1,185 @@
+/* ========================================
+   Marquee Design System — CSS Variables
+   ======================================== */
+
+:root {
+  /* ---- Color Palette ---- */
+  --color-primary: #a78bfa;
+  --color-primary-hover: #8b5cf6;
+  --color-primary-light: rgba(167, 139, 250, 0.14);
+  --color-primary-glow: rgba(139, 92, 246, 0.28);
+
+  --color-danger: #ef4444;
+  --color-danger-hover: #dc2626;
+  --color-danger-light: rgba(239, 68, 68, 0.12);
+
+  --color-success: #22c55e;
+  --color-success-light: rgba(34, 197, 94, 0.12);
+
+  --color-info: #3b82f6;
+  --color-info-light: rgba(59, 130, 246, 0.12);
+
+  --color-warning: #f97316;
+
+  /* ---- Typography ---- */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-base: 0.9375rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.3125rem;
+  --font-size-2xl: 1.625rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.25rem;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* ---- Spacing ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+  --transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- Breakpoints (reference) ---- */
+  /* sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1440px */
+
+  /* ---- Z-Index Scale ---- */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ---- Container ---- */
+  --container-max: 1280px;
+  --container-padding: var(--space-6);
+}
+
+/* ========================================
+   Dark Theme (Default)
+   ======================================== */
+[data-theme='dark'] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-tertiary: #1a1a24;
+  --bg-elevated: #22222e;
+  --bg-hover: #2a2a38;
+  --bg-input: #16161f;
+
+  --surface-1: #141420;
+  --surface-2: #1c1c2a;
+  --surface-3: #242434;
+
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-secondary: rgba(255, 255, 255, 0.05);
+  --border-hover: rgba(255, 255, 255, 0.14);
+  --border-focus: var(--color-primary);
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #9a9ab0;
+  --text-tertiary: #6a6a80;
+  --text-inverse: #0a0a0f;
+  --text-on-primary: #0a0a0f;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.7);
+
+  --overlay: rgba(0, 0, 0, 0.7);
+  --glass: rgba(20, 20, 32, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.06);
+
+  --seat-available: #2a2a38;
+  --seat-available-border: #3a3a4a;
+  --seat-selected: var(--color-primary);
+  --seat-booked: #7f1d1d;
+  --seat-booked-text: #fecaca;
+
+  --skeleton-base: #1c1c2a;
+  --skeleton-shine: #2a2a38;
+
+  --scrollbar-track: #111118;
+  --scrollbar-thumb: #2a2a38;
+}
+
+/* ========================================
+   Light Theme
+   ======================================== */
+[data-theme='light'] {
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f5f5f7;
+  --bg-elevated: #ffffff;
+  --bg-hover: #f0f0f2;
+  --bg-input: #ffffff;
+
+  --surface-1: #ffffff;
+  --surface-2: #f8f8fa;
+  --surface-3: #f0f0f4;
+
+  --border-primary: rgba(0, 0, 0, 0.09);
+  --border-secondary: rgba(0, 0, 0, 0.05);
+  --border-hover: rgba(0, 0, 0, 0.16);
+  --border-focus: var(--color-primary);
+
+  --text-primary: #111118;
+  --text-secondary: #5a5a6e;
+  --text-tertiary: #8a8a9e;
+  --text-inverse: #f0f0f5;
+  --text-on-primary: #111118;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
+
+  --overlay: rgba(0, 0, 0, 0.4);
+  --glass: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(0, 0, 0, 0.06);
+
+  --seat-available: #f0f0f4;
+  --seat-available-border: #d8d8e0;
+  --seat-selected: var(--color-primary);
+  --seat-booked: #fecaca;
+  --seat-booked-text: #991b1b;
+
+  --skeleton-base: #f0f0f4;
+  --skeleton-shine: #e4e4e8;
+
+  --scrollbar-track: #f0f0f2;
+  --scrollbar-thumb: #d0d0d8;
+}
